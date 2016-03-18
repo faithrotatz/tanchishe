@@ -1,0 +1,32 @@
+.huabu{width:600px;
+      height:600px;
+      background:black;
+      
+      margin:0 auto}
+.block{width:29px;
+       height:29px;
+       margin-right:1px ;
+       margin-bottom:1px;
+       background:white;float:left;}
+body{margin:0;padding:50px;
+
+     }
+@media(max-width:600px){
+	.huabu{width:320px;height:320px;
+	}
+	.block{width:15px;
+	      height:15px;}
+	.start,#fenshu,.pause{display:block;margin:0 auto;margin-bottom:10px;}
+}
+.active{
+       animation:food 1s ease;
+       animation-iteration-count:infinite;}
+@keyframes food{
+	0%,100%{transform:scale(0,0);}
+	50%{transform:scale(1,1);}
+}
+.over{width:300px;height:100px;background:white;display:none;
+position:absolute;left:50%;margin-left:-150px;top:50%;margin-top:-100px; z-index:10;
+      text-align:center;line-height:100px;font-size:50px}
+.fenshu,button{margin:0 auto;display:inline-block;
+border:none;width:200px;height:50px;border-radius:30px;box-shadow:-2px 2px 5px rgba(0,0,0,0.5)}
